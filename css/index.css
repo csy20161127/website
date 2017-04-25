@@ -1,0 +1,487 @@
+*{
+	margin:0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+    overflow-x: hidden;
+    // display: none
+}
+.nav{
+	position: absolute;
+    bottom: 2.8415%;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    font-size: 0;
+}
+.nav>div:nth-of-type(1){
+	width: 100%;
+}
+.nav>div:nth-of-type(2){
+	position: absolute;
+	left: 0;
+    bottom: 16.866%;
+    width: 22.7%
+}
+.nav>div:nth-of-type(3){
+	position: absolute;
+   	left: 25.18%;
+    bottom: 16.866%;
+    width: 22.7%;
+}
+.nav>div:nth-of-type(4){
+	width: 22.7%;
+	position: absolute;
+	left: 50%;
+	bottom: 16.866%;
+}
+.nav>div:nth-of-type(5){
+	width: 22.7%;
+	position: absolute;
+	left: 75%;
+	bottom: 16.866%;
+}
+.nav>div>img{
+	width: 100%;
+	height: 100%;
+}
+.ani>div:nth-of-type(1){
+	position: absolute;
+    left: 20%;
+    top: 13%;
+    height: 14.5%;
+    width: 70.46875%;
+    animation-delay:0.5s !important;
+}
+.ani>div:nth-of-type(2){
+	position: absolute;
+    left: 2%;
+    top: 28%;
+    width: 96%;
+    height: 18.5%;
+    animation-duration:1s;
+
+}
+.ani>div:nth-of-type(3){
+	position: absolute;
+    width: 34.84375%;
+    left: 31%;
+    top: 60%;
+    height: 19%;
+}
+.ani>div:nth-of-type(4){
+	position: absolute;
+    left: 58%;
+    top: 70%;
+    width: 13.75%;
+    height: 6.5%;
+}
+.ani>div>img{
+	width: 100%;
+	height: 100%;
+}
+.information{
+	width: 72%;
+    background-image: url(../img/p1_from.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    height: 45%;
+    left: 12.5%;
+    top: 19%;
+    border: 2px solid #E33145;
+    border-radius: 13px;
+    text-align: left !important;
+}
+.information>input{
+	width: 75%;
+    height: 14%;
+    border: 2px solid red;
+    border-radius: 10px;
+    // list-style: none;
+    outline: none;
+    background: none;
+
+}
+.information>input:nth-of-type(1){
+	position: absolute;
+    left: 13%;
+    top: 35%;
+    background-color: #F2BB00;
+}
+.information>input:nth-of-type(2){
+	position: absolute;
+    left: 13%;
+    top: 55%;
+    background-color: #F2BB00;
+}
+
+.btn{
+    position: fixed;
+    width: 35.85% !important;
+    height: 7.5% !important;
+    left: 31%;
+    top: 52%;
+    background-image: url("../img/p1_sub.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border:none;
+}
+.close{
+	width: 7.6875%;
+    position: fixed;
+    left: 82%;
+    top: 13%;
+}
+.close>img{
+	width: 100%;
+}
+.informationAll{
+    position: fixed;
+    z-index: 10;;
+	display: none;
+}
+.mask,.mask1,.mask2{
+	background:black;
+	opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top:0;
+    display: none;
+    z-index: 2;
+}
+.ronkings{
+	width: 80%;
+    background-image: url(../img/ranking_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    height: 55%;
+    left: 9.5%;
+    top: 19%;
+    border: 2px solid #E33145;
+    border-radius: 13px;
+    overflow: scroll;
+}
+.r{
+    margin-top: 22%;
+    overflow: hidden;
+    height: 71%;
+    overflow: scroll;
+}
+.ranking1{
+    display:block; 
+}
+.ranking{
+	display: block;
+	border-bottom: 1px dashed black;
+	// padding-top:22%;
+    padding-bottom:2%;
+	position: relative;
+	text-align: left;
+    margin: 0 10% 5%;
+    overflow: hidden;
+}
+.ranking>img:nth-of-type(1){
+	width: 15px;
+    height: 22px;
+    vertical-align: top;
+    margin-top: 6%;
+}
+.ranking>img:last-of-type{
+    // vertical-align: top;
+	width: 44px;
+    height: 44px;
+    margin-left: 5%;
+
+}
+.ranking>span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6%;
+}
+.name{
+    margin-left: 3%
+}
+.ranking>.span1{
+    vertical-align: top;
+    width: 15px;
+    font-size: 0.8em;
+}
+.ranking>span:last-of-type{
+    float:right;
+}
+.r2{
+   padding-top:0%; 
+}
+.r3{
+    padding-top:0%; 
+}
+.img1{
+     margin-top: 0% !important;
+}
+.ronkings2{
+    width: 78%;
+    position: fixed;
+    height: 55%;
+    left: 9.5%;
+    top: 19%;
+    border: 2px solid #E33145;
+    border-radius: 13px;
+    background-color: #FFEAD1;
+    overflow: scroll; //移动端滚动条看不到
+}
+.ronkings2>p{
+    margin: 0 6%;
+    font-size: 0.85em;
+    text-align:left;
+}
+.ronkings2>p:nth-of-type(1){
+    padding: 5% 0%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "微软雅黑";
+}
+.p{
+   height: 48%;
+}
+.p>p{
+    margin:5% 8%; 
+}
+.C{
+   left: 78%;
+    top: 13%;
+}
+/*第二个页面 开始游戏*/
+.game{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow:hidden;
+      // overflow-x: hidden;
+
+}
+.game1{
+    position: absolute;
+    top: 14%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 84%;
+    height: 20.5%;
+    background-image: url(../img/p2_kuang.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.game1>img{
+    width: 77%;
+    height: 51%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 17%;
+    margin: auto;
+}
+.time{
+    padding: 55% 0 18%;
+    width: 100%;
+    margin-left: 18%
+
+}
+.time>span{
+    background-image: url("../img/p2_scoring.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-top: 7%;
+    width: 11%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    font-family: "微软雅黑";
+
+
+}
+.time>span:last-of-type{
+    width: 19%;
+    margin-left: 2%;
+    background-image: url("../img/shizhong.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.footer{
+    bottom: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    font-size: 0;
+}
+.footer>img{
+    width: 100%;
+}
+.money{
+    width: 59%;
+    height: 46%;
+    margin: auto;
+    position: relative;
+    left: 0%;
+    top: 0;
+}
+.money>img{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+}
+/*
+        数钱的效果    
+*/
+.change{
+    animation:change 1s;
+}
+@keyframes change{
+    from{
+         -webkit-transform:translate3d(0,0%,0) scale3d(1,1,1);
+         opacity: 1;
+    }to{
+        -webkit-transform:translate3d(0,-500px,0) scale3d(0.3,0.3,0.3) ;
+         opacity: 0;
+    }
+}
+.scroll{
+    position: absolute;
+    left: 61%;
+    top: 65%;
+    width: 35%;
+    animation:scrolls 1s infinite;
+}
+.scroll>img{
+    width: 100%;
+}
+@keyframes scrolls{
+    from{
+        transform:translate(0,0);
+        opacity: 1;
+    }
+    to{
+        transform:translate(0,-60%);
+        opacity: 0;
+    }
+}
+/* 第三个页面*/
+.game_end{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/p3_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    display:none;
+      overflow-x: hidden;
+}
+.game_end>p{
+    color: white;
+    text-align: center;
+}
+.game_end>p:nth-of-type(1){
+    position: relative;
+    left: 2%;
+    top: 14%;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.game_end>p:nth-of-type(2){
+    position: absolute;
+    left: 34%;
+    top: 21%;
+    font-size: 2.5em;
+     margin:  5% auto 0;
+}
+.game_end>p:nth-of-type(3){
+    position: absolute;
+    left: 21%;
+    top: 31%;
+     margin:  5% auto 0;
+    font-size: 1em;
+}
+.game_end>p:nth-of-type(4){
+    position: absolute;
+    left: 14%;
+    top: 38%;
+    width: 75%;
+    margin:  5% auto 0;
+    padding: 2.5% 0;
+    display: inline-block;
+    color: #D21026;
+    background-color: white;
+    border-radius: 10px;;
+}
+.sel{
+    width: 75%;
+    height: 16.5%;
+    position: fixed;
+    left: 10%;
+    top: 58%;
+}
+.sel>img{
+    width: 38%;
+    height: 100%;
+    margin: 0 5%;
+}
+.ranking2{
+    display: block;
+}
+.share2{
+    width: 59%;
+    position: absolute;
+    left: 35%;
+    top: 4%;
+    display: none;
+    z-index: 30;
+}
+.share2 img{
+    width: 100%;
+}
+#mask{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    #mask p{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #B90C20;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        margin: auto;
+        color: white;
+        font-size: 4em;
+        text-align: center;
+        line-height: 150px !important;
+        text-align: center;
+    }
